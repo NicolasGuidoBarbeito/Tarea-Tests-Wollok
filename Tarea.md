@@ -96,8 +96,7 @@ object lizzyTagliani {
 		return humor
 	}
 	
-	object fantino {
-
+object fantino {
 	method hacerOpinarDeDeportesA(unPanelista) {
 		unPanelista.elevarVoz()
 		2.times{ unPanelista.tomarAgua()
@@ -106,7 +105,6 @@ object lizzyTagliani {
 }
 
 object polino {
-
 	method hacerOpinarDeChimentosA(unPanelista) {
 		unPanelista.calmarse(5)
 		unPanelista.tomarAgua()
