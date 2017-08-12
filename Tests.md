@@ -47,3 +47,21 @@ test "Toti Pasman se calma 6 minutos y su soberbia queda en 0"{
 	totiPasman.calmarse(6)
 	assert.equals(0,totiPasman.soberbia())
 }
+test "Lizzy Tagliani comienza con 10 de humor"{
+	assert.equals(10,lizzyTagliani.humor())
+}
+test "Lizzy Tagliani eleva la voz y su humor no se modifica"{
+	lizzyTagliani.elevarVoz()
+	assert.equals(10,lizzyTagliani.humor())
+}
+test "Lizzy Tagliani toma un vaso de agua y su humor es 20"{
+	lizzyTagliani.tomarAgua()
+	assert.equals(20,lizzyTagliani.humor())
+}
+test "Lizzy Tagliani no esta de mal humor ya que su humor es mayor a 0"{
+	assert.that(!lizzyTagliani.estaDeMalhumor())
+}
+test "Lizzy Tagliani se calma 10 minutos, pero como no estaba de mal humor, su humor sigue siendo 10"{
+	lizzyTagliani.calmarse(10)
+	assert.equals(10,lizzyTagliani.humor())
+}
